@@ -1,0 +1,7 @@
+build
+dist
+coverage
+*.html
+tests/_files
+.pnpm-store
+CHANGELOG.md
