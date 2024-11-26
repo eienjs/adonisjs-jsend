@@ -2,7 +2,7 @@ import { Response, ResponseStatus } from '@adonisjs/core/http';
 
 Response.macro('jsendSuccess', function (this: Response, data, status = ResponseStatus.Ok) {
   this.status(status).json({
-    status: 'sucess',
+    status: 'success',
     data: data === undefined ? null : data,
   });
 });
