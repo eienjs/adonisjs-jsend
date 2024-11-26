@@ -4,8 +4,9 @@
 [![Npm Node Version Support][badge-node-version]][node-version]
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
-[![Build Status][badge-build]][build]
 [![Total Downloads][badge-downloads]][downloads]
+
+<!-- [![Build Status][badge-build]][build] -->
 
 > Simple helpers to generate JSend-compliant JSON responses
 
