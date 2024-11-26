@@ -1,4 +1,6 @@
+import { type HttpContext } from '@adonisjs/core/http';
 import { type ApplicationService } from '@adonisjs/core/types';
+import { type HttpError } from '@adonisjs/core/types/http';
 
 declare module '@adonisjs/core/http' {
   interface Response {
@@ -27,6 +29,16 @@ declare module '@adonisjs/core/http' {
      */
     jsendError(message: string, status?: number, options?: { code?: string | number; errors?: unknown }): void;
   }
+
+  interface ExceptionHandler {
+    renderErrorAsJsend(error: HttpError, ctx: HttpContext): Promise<void>;
+    renderValidationErrorAsJsend(error: HttpError, ctx: HttpContext): Promise<void>;
+    /**
+     * Whether or not to using jsend standard. When set to true, the errors
+     * will handle using jsend standard, default is enabled.
+     */
+    usingJsend?: boolean;
+  }
 }
 
 export default class JsendProvider {
@@ -36,6 +48,7 @@ export default class JsendProvider {
    * The container bindings have booted
    */
   public async boot(): Promise<void> {
-    await import('../src/jsend.js');
+    await import('../src/jsend_response_macros.js');
+    await import('../src/jsend_exception_handler_macros.js');
   }
 }
