@@ -1,7 +1,7 @@
 {
   "name": "@eienjs/adonisjs-jsend",
   "description": "Simple helpers to generate JSend-compliant JSON responses",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "module": "./build/index.js",
   "types": "./build/index.d.ts",
