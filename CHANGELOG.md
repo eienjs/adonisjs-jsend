@@ -5,13 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v1.0.1](https://luffynando.github.com/eienjs/adonisjs-jsend/compare/v1.0.0...v1.0.1)
+## [v1.0.2](https://luffynando.github.com/eienjs/adonisjs-jsend/compare/v1.0.1...v1.0.2)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`03c9985`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/03c9985a0dd7f7ad7eeea921900a876506dc4e5f)
+- style: :rotating_light: resolve issues reported by eslint [`88ad19b`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/88ad19b5a90c016ebe0d44d200187609adb32672)
+
+## [v1.0.1](https://luffynando.github.com/eienjs/adonisjs-jsend/compare/v1.0.0...v1.0.1) - 2025-05-11
 
 ### Commits
 
 - chore: :arrow_up: update dependencies [`ef77d0d`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/ef77d0d49479a795ac16d69e5365b9239d2b9a6d)
 - docs: :memo: update readme with link to doc on eienjs page [`1bf4d4e`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/1bf4d4e54e832485fdcccc91d6cf10d6ca6fdb2b)
-- refactor: :recycle: update configs on git, prettier and gitignore following latest changes [`1865172`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/1865172241e327257e1ab1354056d25263105571)
+- chore(release): :tada: 1.0.1 [`306ae84`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/306ae841e0f41f96b2cdfbe6995aa0efb9f168f8)
 
 ## v1.0.0 - 2024-11-26
 
