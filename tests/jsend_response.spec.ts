@@ -14,7 +14,7 @@ test.group('Jsend response', (group) => {
     assert.equal(ctx.response.getStatus(), ResponseStatus.Ok);
     assert.isObject(ctx.response.getBody());
     assert.properties(ctx.response.getBody(), ['status']);
-    assert.containsSubset(ctx.response.getBody(), { status: 'success' });
+    assert.containSubset(ctx.response.getBody(), { status: 'success' });
   });
 
   test('jsend success generates a response with specific status code', ({ assert }) => {
@@ -24,7 +24,7 @@ test.group('Jsend response', (group) => {
     assert.equal(ctx.response.getStatus(), ResponseStatus.Created);
     assert.isObject(ctx.response.getBody());
     assert.properties(ctx.response.getBody(), ['status', 'data']);
-    assert.containsSubset(ctx.response.getBody(), { status: 'success', data: 'hi' });
+    assert.containSubset(ctx.response.getBody(), { status: 'success', data: 'hi' });
   });
 
   test('jsend error generates a response with status code 500', ({ assert }) => {
@@ -34,7 +34,7 @@ test.group('Jsend response', (group) => {
     assert.equal(ctx.response.getStatus(), ResponseStatus.InternalServerError);
     assert.isObject(ctx.response.getBody());
     assert.properties(ctx.response.getBody(), ['status', 'message']);
-    assert.containsSubset(ctx.response.getBody(), { status: 'error', message: 'Something happened' });
+    assert.containSubset(ctx.response.getBody(), { status: 'error', message: 'Something happened' });
   });
 
   test('jsend fail generates a response with status code 400', ({ assert }) => {
@@ -44,6 +44,6 @@ test.group('Jsend response', (group) => {
     assert.equal(ctx.response.getStatus(), ResponseStatus.BadRequest);
     assert.isObject(ctx.response.getBody());
     assert.properties(ctx.response.getBody(), ['status', 'data']);
-    assert.containsSubset(ctx.response.getBody(), { status: 'fail', data: { message: 'Something happened' } });
+    assert.containSubset(ctx.response.getBody(), { status: 'fail', data: { message: 'Something happened' } });
   });
 });

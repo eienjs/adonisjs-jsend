@@ -34,7 +34,7 @@ test.group('Jsend exception handler | handle', (group) => {
     assert.equal(ctx.response.getStatus(), ResponseStatus.InternalServerError);
     assert.isObject(ctx.response.getBody());
     assert.properties(ctx.response.getBody(), ['status', 'data']);
-    assert.containsSubset(ctx.response.getBody(), { status: 'error' });
+    assert.containSubset(ctx.response.getBody(), { status: 'error' });
   });
 
   test('pretty error as JSON jsend standard when request accepts JSONAPI', async ({ assert }) => {
@@ -82,7 +82,7 @@ test.group('Jsend exception handler | handle', (group) => {
     assert.equal(ctx.response.getStatus(), ResponseStatus.InternalServerError);
     assert.isObject(ctx.response.getBody());
     assert.properties(ctx.response.getBody(), ['status', 'data']);
-    assert.containsSubset(ctx.response.getBody(), { status: 'fail' });
+    assert.containSubset(ctx.response.getBody(), { status: 'fail' });
   });
 
   test('use error status code', async ({ assert }) => {
@@ -122,7 +122,7 @@ test.group('Jsend exception handler | handle', (group) => {
     await exceptionHandler.handle(reporter.createError(), ctx);
 
     assert.equal(ctx.response.getStatus(), ResponseStatus.UnprocessableEntity);
-    assert.containsSubset(ctx.response.getBody(), {
+    assert.containSubset(ctx.response.getBody(), {
       status: 'fail',
       data: {
         errors: [
@@ -151,7 +151,7 @@ test.group('Jsend exception handler | handle', (group) => {
     await exceptionHandler.handle(reporter.createError(), ctx);
 
     assert.equal(ctx.response.getStatus(), ResponseStatus.UnprocessableEntity);
-    assert.containsSubset(ctx.response.getBody(), {
+    assert.containSubset(ctx.response.getBody(), {
       status: 'fail',
       data: {
         errors: [
