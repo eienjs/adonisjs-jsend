@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/require-await */
-import { ExceptionHandler, type HttpContext } from '@adonisjs/core/http';
-import { type HttpError } from '@adonisjs/core/types/http';
+import type { HttpContext } from '@adonisjs/core/http';
+import type { HttpError } from '@adonisjs/core/types/http';
+import { ExceptionHandler } from '@adonisjs/core/http';
 
 ExceptionHandler.macro(
   'renderErrorAsJsend',
@@ -33,10 +33,13 @@ ExceptionHandler.macro(
 
 ExceptionHandler.macro(
   'renderValidationErrorAsJsend',
+  // eslint-disable-next-line @typescript-eslint/require-await
   async function (this: ExceptionHandler, error: HttpError, ctx: HttpContext) {
+    Object.assign(this, { _jsendEnabled: true });
+
     ctx.response.jsendFail(
       {
-        errors: error.messages,
+        errors: error.messages as unknown,
       },
       error.status,
     );

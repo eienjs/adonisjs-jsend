@@ -13,4 +13,4 @@ configure({
   },
 });
 
-run();
+void run();
