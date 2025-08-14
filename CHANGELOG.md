@@ -5,12 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v1.0.2](https://luffynando.github.com/eienjs/adonisjs-jsend/compare/v1.0.1...v1.0.2)
+## [v1.0.3-0](https://luffynando.github.com/eienjs/adonisjs-jsend/compare/v1.0.2...v1.0.3-0)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`7f755e7`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/7f755e723f4ac005ca880eca51e0d4662625b7aa)
+- build: :construction_worker: move from tsup to tsdown for generation of library [`f7a2ac7`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/f7a2ac7d2832f44944a1ea349522284c3e943f2f)
+- style: :rotating_light: resolve issues reported by eslint [`67a9791`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/67a9791a44c1090a5243a92836e5a239799bd23c)
+
+## [v1.0.2](https://luffynando.github.com/eienjs/adonisjs-jsend/compare/v1.0.1...v1.0.2) - 2025-07-24
 
 ### Commits
 
 - chore: :arrow_up: update dependencies [`03c9985`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/03c9985a0dd7f7ad7eeea921900a876506dc4e5f)
 - style: :rotating_light: resolve issues reported by eslint [`88ad19b`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/88ad19b5a90c016ebe0d44d200187609adb32672)
+- chore(release): :tada: 1.0.2 [`5f2692e`](https://luffynando.github.com/eienjs/adonisjs-jsend/commit/5f2692e27f52981d56f9a87cdc742319964552b5)
 
 ## [v1.0.1](https://luffynando.github.com/eienjs/adonisjs-jsend/compare/v1.0.0...v1.0.1) - 2025-05-11
 
