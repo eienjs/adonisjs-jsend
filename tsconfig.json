@@ -1,7 +1,7 @@
 {
   "extends": "@nodecfdi/tsconfig/tsconfig.pkg.json",
   "compilerOptions": {
-    "rootDir": "./",
-    "outDir": "./build"
+    "rootDir": ".",
+    "outDir": "dist"
   }
 }
