@@ -35,8 +35,6 @@ ExceptionHandler.macro(
   'renderValidationErrorAsJsend',
   // eslint-disable-next-line @typescript-eslint/require-await
   async function (this: ExceptionHandler, error: HttpError, ctx: HttpContext) {
-    Object.assign(this, { _jsendEnabled: true });
-
     ctx.response.jsendFail(
       {
         errors: error.messages as unknown,
