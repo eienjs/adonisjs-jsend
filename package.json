@@ -1,7 +1,7 @@
 {
   "name": "@eienjs/adonisjs-jsend",
   "type": "module",
-  "version": "1.0.3-0",
+  "version": "1.0.3",
   "packageManager": "pnpm@10.15.0",
   "description": "Simple helpers to generate JSend-compliant JSON responses",
   "author": "Fernando Isidro <luffynando@gmail.com>",
